@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 const userOutput = (props) => {
     return (
         <div>   
-            <p>{props.username}</p>
+            <p style={props.style}>{props.username}</p>
             <p>Hi!</p>
         </div>
     );

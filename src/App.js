@@ -19,13 +19,21 @@ class App extends Component {
   }
 
   render() {
+    const style = {
+      font: 'inherit',
+      textShadow: '2px 2px 5px red'
+    };
+
     return (
       <div className="App">
         <UserInput 
           changed={this.changeUsernameHandler}
           username={this.state.users[0].username}>
         </UserInput> 
-        <UserOutput username={this.state.users[0].username}></UserOutput>        
+        <UserOutput 
+          style={style} 
+          username={this.state.users[0].username}>
+        </UserOutput>        
       </div>
     );
   }
